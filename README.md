@@ -3,9 +3,9 @@ convert.to
 
 A simple service to convert between different serialized data formats.
 
-This tool is made by [http://www.vkareh.net](vkareh.net, LLC) using [http://http://www.nodejs.org/](node.js), [http://expressjs.com/](Express), [http://documentcloud.github.com/backbone/](Backbone.js), and several other modules for data conversion.
+This tool is made by [vkareh.net, LLC](http://www.vkareh.net) using [node.js](http://http://www.nodejs.org/), [Express](http://expressjs.com/), [Backbone.js](http://documentcloud.github.com/backbone/), and several other modules for data conversion.
 
-The source code for **convert.to** is on [https://github.com/vkareh/convert.to](GitHub) and is released under the [http://en.wikipedia.org/wiki/MIT_License](MIT license). The website itself is hosted on [http://www.nodejitsu.com/](nodejitsu).
+The source code for **convert.to** is on [GitHub](https://github.com/vkareh/convert.to) and is released under the [http://en.wikipedia.org/wiki/MIT_License](MIT license). The website itself is hosted on [nodejitsu](http://www.nodejitsu.com/).
 
 ## License
 
