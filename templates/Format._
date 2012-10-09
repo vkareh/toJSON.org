@@ -1,0 +1,15 @@
+<div id="options"></div>
+<br />
+<pre class="well"><%= data %></pre>
+<div id="actions" class="btn-group" data-toggle="buttons-radio">
+  <% _.each(model.actions, function(label, action) { %>
+    <button class="actions btn" name="<%= action %>"><%= label %></button>
+  <% }); %>
+</div>
+<br />
+<div id="action-message"></div>
+<div id="action">
+  <% _.each(model.actions, function(label, action) { %>
+    <div class="action" id="<%= action %>"></div>
+  <% }); %>
+</div>

@@ -1,0 +1,14 @@
+<div class="form-inline">
+  <input type="text" id="host" placeholder="Host" />
+  <input type="text" id="db" placeholder="Database" />
+</div>
+<br />
+<div class="form-inline">
+  <input type="text" id="username" placeholder="Username" />
+  <input type="password" id="password" placeholder="Password" />
+</div>
+<br />
+<div class="form-inline">
+  <input type="text" id="type" placeholder="doc.type" />
+  <button class="btn" id="send">Send!</button>
+</div>

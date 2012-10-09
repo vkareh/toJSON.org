@@ -1,0 +1,5 @@
+<h1>About</h1>
+
+<p><strong>convert.to</strong> is a simple service for converting between different <a href="https://en.wikipedia.org/wiki/Comparison_of_data_serialization_formats">serialized data formats</a>.</p>
+
+<p>This tool is made by <a href="http://www.vkareh.net">vkareh.net, LLC</a> using <a href="http://http://www.nodejs.org/">node.js</a>, <a href="http://expressjs.com/">Express</a>, <a href="http://documentcloud.github.com/backbone/">Backbone.js</a>, and several other modules for data conversion.</p>

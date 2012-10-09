@@ -1,0 +1,12 @@
+<h1>convert.to</h1>
+<div id="formats" class="btn-group" data-toggle="buttons-radio">
+  <% _.each(model.formats, function(format) { %>
+    <button class="format btn" name="<%= format %>"><%= format %></button>
+  <% }); %>
+</div>
+<div id="message"></div>
+<div id="data">
+  <% _.each(model.formats, function(format) { %>
+    <div class="data" id="<%= format %>"></div>
+  <% }); %>
+</div>
