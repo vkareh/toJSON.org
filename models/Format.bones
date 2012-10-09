@@ -10,6 +10,6 @@ model = Backbone.Model.extend({
         return __dirname + '/../' + this.get('path');
     },
     actions: {
-        'Download': 'Download',
+        //'Download': 'Download',
     }
 });
