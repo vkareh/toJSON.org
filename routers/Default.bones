@@ -9,10 +9,7 @@ router.prototype.routes = {
 
 // Homepage
 // --------
-router.prototype.home = function(params, query) {
-    if (this.req && this.req.query.reset !== undefined) {
-        delete Bones.file;
-    }
+router.prototype.home = function() {
     if (_.isUndefined(Bones.file)) {
         this.send(views.Home);
     } else {

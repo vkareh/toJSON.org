@@ -1,6 +1,6 @@
 {
   "name": "convert.to",
-  "version": "0.0.1-8",
+  "version": "0.0.1-10",
   "author": {
     "name": "Victor Kareh",
     "url": "http://www.vkareh.net"
@@ -11,6 +11,7 @@
     "csv": "0.0.x",
     "json2csv": "0.0.x",
     "jstoxml": "0.1.x",
+    "mime": "1.2.x",
     "xml2js": "0.2.x",
     "yamljs": "0.1.x"
   },

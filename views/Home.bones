@@ -1,7 +1,7 @@
 view = views.Main.extend({id: 'home'});
 
 view.prototype.render = function() {
-    formats = (new models.File()).formats;
+    formats = (new models.File()).getFormats();
     $(this.el).empty().append(templates.Home({formats: formats}));
     return this;
 }

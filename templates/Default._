@@ -21,9 +21,9 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="/?">convert.to</a>
+          <a class="brand" href="/">convert.to</a>
           <ul class="nav">
-            <li><a href="/?reset">Upload</a></li>
+            <li><a href="/upload">Upload</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="http://www.vkareh.net/contact.html">Contact</a></li>
           </ul>
