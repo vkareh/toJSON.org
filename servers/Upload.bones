@@ -19,7 +19,6 @@ upload.initialize = function(parent, app) {
         var mime = require('mime');
         mime.define({'application/x-yaml': ['yaml', 'yml']});
         var mimeType = mime.lookup(file.get('path'));
-        console.log('mime', mimeType);
         file.set({mime: mimeType});
         // Only allow certain file formats
         if (file.formats[mimeType] !== undefined) {
