@@ -38,7 +38,7 @@ router.prototype.robots = function() {
 // Helper to assemble the page title
 // ---------------------------------
 router.prototype.pageTitle = function(view) {
-    var title = 'convert.to';
+    var title = '.toJSON().org';
     return (view.pageTitle ? view.pageTitle + ' | ' + title : title);
 }
 

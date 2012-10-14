@@ -1,5 +1,5 @@
 {
-  "name": "convert.to",
+  "name": "toJSON.org",
   "version": "0.0.1-11",
   "author": {
     "name": "Victor Kareh",
@@ -15,7 +15,12 @@
     "xml2js": "0.2.x",
     "yamljs": "0.1.x"
   },
-  "subdomain": "convert",
+  "subdomain": "toJSON",
+  "domains": [
+    "toJSON.vkareh.net",
+    "www.toJSON.org",
+    "toJSON.org"
+  ],
   "scripts": {
     "start": "index.js"
   },

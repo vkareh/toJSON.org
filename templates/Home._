@@ -1,4 +1,4 @@
-<h1>convert.to</h1>
+<h1>.toJSON()<small>.org</small></h1>
 <p class="lead muted">a simple service to convert between different serialized data formats</p>
 
 <form action="/upload" method="post" enctype="multipart/form-data">
