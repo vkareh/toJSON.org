@@ -57,7 +57,7 @@ view.prototype.events = {
 // Routes a click event
 // --------------------
 view.prototype.routeClick = function(ev) {
-    if (_.size(window.currentKeys)) {
+    if (window.currentKeys && _.size(window.currentKeys)) {
         return true;
     }
     // We only route client side if the browser supports push state.
