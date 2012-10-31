@@ -5,6 +5,7 @@ router.prototype.routes = {
     '/about': 'about',
     '/contact': 'contact',
     '/robots.txt': 'robots',
+    '/humans.txt': 'humans'
 }
 
 // Homepage
@@ -29,10 +30,16 @@ router.prototype.contact = function() {
     this.send(views.Page, {template: 'Contact'});
 }
 
-// Disallow indexing
-// -----------------
+// robots.txt
+// ----------
 router.prototype.robots = function() {
-    this.res.send('User-agent: *\nDisallow: /', {'Content-Type': 'text/plain'});
+    this.res.send('User-agent: *\nDisallow: /files/\nDisallow: /assets/', {'Content-Type': 'text/plain'});
+}
+
+// humans.txt
+// ----------
+router.prototype.humans = function() {
+    this.res.send('toJSON().org allows you to upload a file and convert it to a different serialized data format.\nIt was made by Victor Kareh in his spare time.\nHe also takes contracts for using shiny technology in really complex websites.\nCheck him out at www.vkareh.net', {'Content-Type': 'text/plain'});
 }
 
 // Helper to assemble the page title

@@ -2,6 +2,6 @@
 
 <p><strong>.toJSON()</strong>.org is a simple service for converting between different <a href="https://en.wikipedia.org/wiki/Comparison_of_data_serialization_formats">serialized data formats</a>.</p>
 
-<p>This tool is made by <a href="http://www.vkareh.net">vkareh.net, LLC</a> using <a href="http://http://www.nodejs.org/">node.js</a>, <a href="http://expressjs.com/">Express</a>, <a href="http://documentcloud.github.com/backbone/">Backbone.js</a>, and several other modules for data conversion.</p>
+<p>This tool is made by <a href="http://www.vkareh.net">Victor Kareh</a> using <a href="http://http://www.nodejs.org/">node.js</a>, <a href="http://expressjs.com/">Express</a>, <a href="http://documentcloud.github.com/backbone/">Backbone.js</a>, and several other modules for data conversion.</p>
 
 <p>The source code for <strong>.toJSON()</strong>.org is on <a href="https://github.com/vkareh/toJSON.org">GitHub</a> and is released under the MIT license. The website itself is hosted on <a href="http://www.nodejitsu.com/">nodejitsu</a>.</p>
