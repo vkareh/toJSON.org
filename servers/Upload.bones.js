@@ -8,9 +8,7 @@ upload.initialize = function(parent, app) {
     }));
     this.use(middleware.cookieParser());
     this.use(middleware.session({
-        store: new middleware.session.MemoryStore({reapInterval: -1}),
-        secret: '28e92e09475d3e1957bdbf421db3c079',
-        cookie: {path: '/', httpOnly: true, maxAge: 2629800000}
+        secret: require('crypto').createHash('sha1').digest('hex')
     }));
     // Handle file upload and store in session
     this.post('/upload', function(req, res) {
