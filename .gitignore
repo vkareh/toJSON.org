@@ -6,10 +6,7 @@ lib-cov
 *.pid
 *.gz
 
-files/*.csv
-files/*.json
-files/*.xml
-files/*.yaml
+files/*.*
 
 pids
 logs
