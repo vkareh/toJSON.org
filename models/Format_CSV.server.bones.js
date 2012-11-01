@@ -93,11 +93,15 @@ models.Format_CSV.prototype._flatten = function(json, row, index, arrays) {
             // Each array element should add a new row
             var first = true;
             _.each(row[key], function(r) {
-                var flatArray = model._flatten(json[index], r, key);
                 var flatObject = {};
-                _.each(flatArray, function(v, k) {
-                    flatObject[key + '.' + k] = v;
-                });
+                if (_.isString(r)) {
+                    flatObject[key] = r;
+                } else {
+                    var flatArray = model._flatten(json[index], r, key);
+                    _.each(flatArray, function(v, k) {
+                        flatObject[key + '.' + k] = v;
+                    });
+                }
                 if (first) {
                     // Add first row to current element
                     _.extend(toReturn, flatObject);
@@ -105,8 +109,10 @@ models.Format_CSV.prototype._flatten = function(json, row, index, arrays) {
                 } else {
                     // For every other row, clone entire object into a new row
                     var obj = _.clone(json[index]);
-                    delete obj[key];
-                    json.push(model._flatten(obj, _.extend(obj, flatObject), index, false));
+                    if (_.has(obj, key)) {
+                        delete obj[key];
+                        json.push(model._flatten(obj, _.extend(obj, flatObject), index, false));
+                    }
                 }
             });
         } else if (_.isObject(row[key])) {
