@@ -9,8 +9,8 @@ model.prototype.formats = {
     'application/json': 'JSON',
     //'text/html': 'HTML',
     //'text/x-sql': 'SQL',
-    'application/xml': 'XML',
-    'text/xml': 'XML',
+    //'application/xml': 'XML',
+    //'text/xml': 'XML',
     'application/x-yaml': 'YAML'
 }
 

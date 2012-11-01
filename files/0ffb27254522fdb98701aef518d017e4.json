@@ -3,12 +3,8 @@
     "lastName": "Smith",
     "age": 25,
     "address": {
-        "streetAddress": {
-            "number": "21",
-            "street": "2nd Street"
-        },
+        "streetAddress": "21 2nd Street",
         "city": "New York",
-        "county": null,
         "state": "NY",
         "postalCode": "10021"
     },
