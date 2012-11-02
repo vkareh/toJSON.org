@@ -1,12 +1,12 @@
 {
   "name": "toJSON.org",
-  "version": "0.0.1-20",
+  "version": "0.0.1-21",
   "author": {
     "name": "Victor Kareh",
     "url": "http://www.vkareh.net"
   },
   "dependencies": {
-    "bones": "git://github.com/developmentseed/bones.git",
+    "bones": "git://github.com/vkareh/bones.git",
     "cradle": "0.6.x",
     "csv": "0.0.x",
     "json2csv": "0.0.x",

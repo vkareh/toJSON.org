@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title><%= title %></title>
-    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/assets/toJSON.org/images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/assets/toJSON.org/bootstrap/docs/assets/css/bootstrap.css?<%= version %>" media="screen" />
     <style>
       body {
@@ -41,7 +41,9 @@
         </div>
       </div>
     </div>
-    <div id="main" class="container"><%= main %></div>
+    <div id="page" class="container clearfix">
+      <div id="main"><%= main %></div>
+    </div>
     <hr />
     <footer class="container muted"><small>&copy; 2012 <a class="muted" href="http://www.vkareh.net">Victor Kareh</a></small></footer>
     <script><%= startup %></script>

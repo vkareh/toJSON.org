@@ -55,19 +55,18 @@ router.prototype.send = function(view) {
     var options = (arguments.length > 1 ? arguments[1] : {});
     var v = new view(options);
 
-    // Populate the #page div with the main view.
-    $('#main').empty().append(v.el);
+    // Populate the #page div with the main view
+    $('#page').empty().append(v.el);
 
-    // @todo explain this!
+    // Render and attach client-side behaviors
     v.render().attach().activeLinks().scrollTop();
 
-    // Set the page title.
+    // Set the page title
     document.title = this.pageTitle(v);
 }
 
-// Generic error handling for our Router
-// -------------------------------------
+// Generic error handling
+// ----------------------
 router.prototype.error = function(error) {
     this.send(views.Error, _.isArray(error) ? error.shift() : error);
-    console.error(error);
 }
