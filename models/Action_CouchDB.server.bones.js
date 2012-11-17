@@ -26,10 +26,12 @@ models.Action_CouchDB.prototype.sync = function(method, model, options) {
         }
     });
     var db = conn.database(model.get('db'));
-    model.prepareData();
-    db.save(model.get('data'), function(err, res) {
-        if (err) return options.error(err.reason);
-        options.success(model);
+    db.exists(function(err, exists) {
+        if (err || !exists) return options.error(err.reason);
+        db.save(model.prepareData(), function(err, res) {
+            if (err) return options.error(err.reason);
+            options.success(model);
+        });
     });
 }
 
@@ -51,6 +53,7 @@ models.Action_CouchDB.prototype.prepareData = function() {
             data[index] = doc;
         });
     }
+    return data;
 }
 
 models.Action_CouchDB.prototype.validate = function(attributes) {
